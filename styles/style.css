@@ -310,18 +310,16 @@
 
 .footer__columns {
     margin: 60px auto 40px;
-    /* width: 90%;  почему то не хотел он растягиваться во всю ширину -_- */
+    width: 90%;
     display: flex;
     justify-content: space-between;
-    flex-basis: 90%;
-    /* поэтому вместо flex-basis:711px; я написал 90% */
 }
 
 .footer__column_content_copyright {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
+    flex-basis: 711px;
 }
 
 .logo_place_footer {
