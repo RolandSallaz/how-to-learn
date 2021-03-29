@@ -162,12 +162,13 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
 }
 
 .table__cell {
     margin-top: 60px;
     width: 250px;
-    list-style-type: none;
 }
 
 .table__heading {
@@ -282,13 +283,13 @@
     width: 1100px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
 }
 
 .table__cell_theme_dark {
     width: 200px;
     color: white;
     margin-top: 80px;
+    margin-left: 0;
 }
 
 .table__heading_theme_dark {
