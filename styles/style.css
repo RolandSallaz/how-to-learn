@@ -9,6 +9,9 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+
+/* header */
+
 .header {
     height: 100vh;
     min-height: 600px;
@@ -20,10 +23,8 @@
     background-color: #f2f2f2;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
-
-
-/* header */
 
 .logo__place_header {
     position: absolute;
@@ -39,7 +40,6 @@
     line-height: 96px;
     margin-left: 64px;
     font-size: 102px;
-    z-index: 2;
 }
 
 .header__subtitle {
@@ -50,7 +50,6 @@
     bottom: 30px;
     left: 64px;
     width: 388px;
-    z-index: 2;
 }
 
 .header__link {
@@ -64,18 +63,18 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    z-index: 1;
+    z-index: -1;
 }
 
 .header__square-pic {
     width: 568px;
     height: 568px;
     position: absolute;
-    z-index: 0;
     right: 0;
     top: 64px;
     background-color: #2f80ed;
     overflow: hidden;
+    z-index: -2;
 }
 
 
@@ -186,12 +185,12 @@
     display: flex;
     flex-flow: column wrap;
     align-content: center;
+    z-index: 1;
 }
 
 .feynman__title {
     margin: 0 auto;
     width: 648px;
-    z-index: 2;
     line-height: 1.15;
     font-size: 120px;
     font-weight: bold;
@@ -200,7 +199,6 @@
 
 .feynman__subtitle {
     margin: 70px auto 0 auto;
-    z-index: 2;
     line-height: 51px;
     font-size: 36px;
     font-weight: normal;
@@ -209,7 +207,6 @@
 .feynman__link {
     text-decoration: none;
     color: #2f80ed;
-    z-index: 2;
     line-height: 51px;
     font-size: 36px;
     font-weight: normal;
@@ -224,6 +221,7 @@
     height: 637px;
     left: 0;
     bottom: 0;
+    z-index: -1;
 }
 
 
@@ -236,6 +234,7 @@
     flex-direction: column;
     overflow: hidden;
     color: white;
+    z-index: 1;
 }
 
 .section__title_dark {
@@ -246,11 +245,9 @@
     line-height: 1.15;
     font-size: 60px;
     font-weight: bold;
-    z-index: 2;
 }
 
 .section__subtitle_dark {
-    z-index: 2;
     width: 60%;
     margin: 20px auto auto;
     display: flex;
@@ -265,6 +262,7 @@
     width: 877px;
     height: 877px;
     right: -210px;
+    z-index: -1;
 }
 
 .table_theme_dark {
@@ -273,7 +271,6 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    z-index: 2;
 }
 
 .table__cell_theme_dark {
@@ -368,4 +365,8 @@
     height: 16px;
     margin: auto;
     padding-right: 10px;
+}
+
+:link:hover {
+    box-shadow: 0 0 5px currentColor;
 }
