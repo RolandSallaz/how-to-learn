@@ -4,4 +4,9 @@
     margin: 0;
     display: flex;
     justify-content: center;
+    border: 1px solid red;
+}
+
+.resources__logo:hover {
+    opacity: 0.5;
 }
