@@ -4,7 +4,6 @@
     height: 877px;
     right: -210px;
     top: 0;
-    background-image: url(../../../images/kaufman-triangle.svg);
+    background: center/cover url(../../../images/kaufman-triangle.svg);
     z-index: -1;
-    background-size: cover;
 }
