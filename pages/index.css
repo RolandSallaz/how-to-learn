@@ -85,6 +85,10 @@
 @import url(../blocks/section-subtitle/section-subtitle.css);
 @import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
 
+/* link hover */
+
+@import url(../blocks/link-hover/link-hover.css);
+
 /* table */
 
 @import url(../blocks/table/table.css);
